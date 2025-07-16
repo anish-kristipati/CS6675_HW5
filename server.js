@@ -19,20 +19,24 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/gallery1', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'gallery1.html'));
+app.get('/page1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page1.html'));
 });
 
-app.get('/gallery2', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'gallery2.html'));
+app.get('/page2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page2.html'));
 });
 
-app.get('/gallery3', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'gallery3.html'));
+app.get('/page3', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page3.html'));
 });
 
-app.get('/gallery4', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'gallery4.html'));
+app.get('/page4', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page4.html'));
+});
+
+app.get('/page5', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'page5.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
