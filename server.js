@@ -3,15 +3,20 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const compression = require('compression');
-const helmet = require('helmet');
+// remove if caching isn't neded
+//const apicache = require('apicache'); 
 
 const app = express();
 const PORT = 3000;
 
+// remove if caching isn't neded
+//const cache = apicache.middleware;
+
 // Middleware
-app.use(helmet());
 app.use(compression());
 app.use(morgan('combined'));
+// remove if caching isn't neded
+//app.use(cac`he`('5 minutes'));
 app.use(express.static('public'));
 
 // Routes for 5 different pages
